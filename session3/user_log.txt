@@ -1,0 +1,8 @@
+Script PID: 22896, Number of arguments: 0
+User Information:
+Name: Zhyldyz
+Age: 29
+City: Chicago
+Email: zh.toktorova@gmail.com
+-------------------------
+

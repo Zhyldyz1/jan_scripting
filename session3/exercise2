@@ -1,0 +1,35 @@
+#!/bin/bash
+
+## EXERCISE2 PSEUDOCODE
+# Step1. Present the optiond
+# Step2. Prompt the user for a selection
+#   Check the selection if it matches with one of the options
+#    if yes, Continue
+#   repeat the prompt 
+# Step3. Use 'case' to handle user request
+# Step4. Done
+TZ="America-Chicago"
+echo """
+Select an option:
+1) Show date
+2) List files
+3) Show user
+4) Exit
+"""
+choice="0"
+while [[ $choice != 1 && $choice != 2 && $choice != 3 && $choice != 4 ]]; do
+    eco "Please choose a valid option:  [ 1, 2, 3, 4 ]"
+    read -p "Enter your choice: (Ex:1): " choice
+done 
+
+# echo "Select Choice: $choice"
+case $choice in
+   1) date
+   ;;
+   2) ls 
+   ;;
+   3) whoami
+   ;;
+   4) echo "Goodbye"; exit
+esac
+      
